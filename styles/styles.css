@@ -2,11 +2,26 @@
     --primary-color: darkblue;
     --nav-text: white;
     --border-color: black;
-    --image-border: 1px solid var(--border-color);
+    --border-image: 1px solid var(--border-color);
+    --image-height: auto;
     --small-padding: 10px;
     --medium-padding: 20px;
+    --large-padding: 1rem;
     --aside-padding: 1em;
-    --image-height: auto;
+    --small-margin: 1em;
+    --background-light: #eee;
+    --text-dark: #000;
+    --shadow-color: gray;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Nunito", Helvetica, sans-serif;
 }
 
 nav {
@@ -17,36 +32,40 @@ nav {
 nav a {
     color: var(--nav-text);
     display: block;
-    padding: var(--medium-padding);
+    padding: var(--small-padding);
 }
 
 h1 {
     color: var(--primary-color);
+    padding: var(--large-padding);
+}
+
+main {
+    max-width: 640px;
 }
 
 main img {
     width: 150px;
     height: var(--image-height);
-    border: var(--image-border);
+    border: var(--border-image);
     padding: 2px;
-    box-shadow: 0 0 30px gray;
+    box-shadow: 0 0 30px var(--shadow-color);
+    float: right;
+    margin-bottom: var(--small-padding);
 }
 
 p {
-    padding: 0;
-}
-
-main {
-    max-width: 840px;
+    padding: var(--large-padding);
 }
 
 aside {
     width: 20em;
-    margin: 1em;
+    position: relative;
+    margin: var(--small-margin);
     border: 1px solid rgba(0 0 0 / 0.2);
     padding: var(--aside-padding);
-    background-color: #eee;
-    color: #333;
+    background-color: var(--background-light);
+    color: var(--text-dark);
     text-align: center;
 }
 
@@ -55,8 +74,29 @@ aside img {
     height: var(--image-height);
 }
 
+aside h2 {
+    position: absolute;
+    top: 27px;
+    left: 135px;
+}
+
 footer {
-    margin-top: 1em;
-    border-top: var(--image-border);
+    margin-top: var(--small-margin);
+    border-top: var(--border-image);
     text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding: var(--large-padding);
+    clear: both;
+}
+
+/* Class Selectors */
+.box {
+    margin: var(--large-padding);
+    border: 1px solid rgb(0 0 0 / 10%);
+    padding: var(--large-padding);
+    background-color: var(--background-light);
+    color: var(--text-dark);
 }
