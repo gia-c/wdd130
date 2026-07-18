@@ -1,0 +1,161 @@
+:root {
+    --primary-color: #4db0a8;
+    --secondary-color: #4db0a8;
+    --accent1-color: #1F2F46;
+    --accent2-color: #EAF4F4;
+    --white: #FFFFFF;
+    --heading-font: "Nunito", serif;
+    --body-font: "Nunito", sans-serif;
+    --page-width: 1200px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+    background-color: var(--accent2-color);
+    line-height: 1.6;
+}
+
+header,
+main,
+footer {
+    max-width: var(--page-width);
+    margin: 0 auto;
+}
+
+/*Header*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--secondary-color);
+    padding: 20px 40px;
+}
+
+/* Logo */
+
+.logo {
+    width: 140px;
+    height: auto;
+}
+
+/* Navigation */
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color .3s;
+}
+
+nav a:hover {
+    color: var(--primary-color);
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Company Name */
+
+.hero h1 {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 18px;
+    background-color: rgba(22, 66, 91, .85);
+    color: var(--white);
+    font-size: 2.4rem;
+}
+
+/* Mission Box */
+
+.hero article {
+    position: absolute;
+    bottom: 35px;
+    left: 40px;
+    right: 40px;
+    background-color: rgba(255, 255, 255, .90);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Happy Client */
+
+.hero article img {
+    float: right;
+    width: 170px;
+    margin-left: 20px;
+    border-radius: 8px;
+}
+
+/* Headings*/
+
+h2 {
+    font-family: var(--heading-font);
+    color: var(--secondary-color);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Sections */
+
+section {
+    background: var(--white);
+    margin: 35px 0;
+    padding: 35px;
+    border-radius: 8px;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    padding: 20px 40px;
+}
+
+/* Social media icons*/
+
+.socialmedia {
+    display: flex;
+    gap: 15px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 35px;
+    height: auto;
+
+    transition: transform .3s;
+}
+
+.socialmedia img:hover {
+    transform: scale(1.15);
+}
