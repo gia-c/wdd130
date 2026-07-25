@@ -1,12 +1,14 @@
 :root {
     --primary-color: #4db0a8;
-    --secondary-color: #4db0a8;
+    --secondary-color: #1F2F46;
     --accent1-color: #1F2F46;
     --accent2-color: #EAF4F4;
     --white: #FFFFFF;
     --heading-font: Georgia, "Times New Roman", serif;
     --body-font: Arial, Helvetica, sans-serif;
     --page-width: 1200px;
+    --hero-overlay: rgba(22, 66, 91, 0.85);
+    --article-bg: rgba(255, 255, 255, 0.90);
 }
 
 * {
@@ -56,7 +58,7 @@ nav {
 }
 
 nav a {
-    color: var(--accent1-color);
+    color: var(--white);
     text-decoration: none;
     font-weight: bold;
     transition: color .3s;
@@ -85,7 +87,7 @@ nav a:hover {
     width: 100%;
     text-align: center;
     padding: 18px;
-    background-color: rgba(22, 66, 91, .85);
+    background-color: var(--hero-overlay);
     color: var(--white);
     font-size: 2.4rem;
 }
@@ -97,7 +99,7 @@ nav a:hover {
     bottom: 35px;
     left: 40px;
     right: 40px;
-    background-color: rgba(255, 255, 255, .90);
+    background-color: var(--article-bg);
     padding: 20px;
     border-radius: 8px;
 }
@@ -115,7 +117,7 @@ nav a:hover {
 
 h2 {
     font-family: var(--heading-font);
-    color: var(--secondary-color);
+    color: var(--accent1-color);
     text-align: center;
     margin-bottom: 20px;
 }
