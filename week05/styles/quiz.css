@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page */
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background: #ffffff;
+    color: #111;
+    padding: 25px;
+}
+
+/* Main container */
+main {
+    max-width: 660px;
+    margin: auto;
+}
+
+/* Heading */
+h1 {
+    color: #001a80;
+    font-size: 2.1rem;
+    margin: .5rem;
+    margin-bottom: 18px;
+}
+
+/* Form */
+form {
+    background: #ececec;
+    border: 1px solid rgb(0 0 0 / 10%);
+    border-radius: 5px;
+    padding: 25px;
+}
+
+/* Each question */
+.quiz-item {
+    margin-bottom: 28px;
+}
+
+/* Labels */
+label {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    line-height: 1.4;
+}
+
+/* Inputs */
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #888;
+    background: #fff;
+}
+
+/* Textarea */
+textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+/* Select */
+select {
+    height: 44px;
+}
+
+/* Code sample */
+code {
+    display: block;
+    width: 75%;
+    margin: 18px auto;
+    background: #333;
+    color: #fff;
+    padding: 16px 20px;
+    font-family: Consolas, monospace;
+    font-size: 1rem;
+}
+
+/* Number input */
+input[type="number"] {
+    height: 42px;
+}
+
+/* Button */
+button {
+    display: block;
+    width: 100%;
+    padding: 16px;
+    margin-top: 10px;
+    background: navy;
+    color: #fff;
+    border: 1px solid rgb(0 0 0 / 10%);
+    border-radius: .5rem;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #05006b;
+}
