@@ -258,6 +258,10 @@ nav a:hover {
 /* ======================================
   ABOUT US PAGE
 ====================================== */
+.visually-hidden {
+    position: absolute;
+    left: -9999px;
+}
 
 .hero {
     position: relative;
@@ -467,6 +471,7 @@ section {
     width: 200px;
     height: 200px;
     object-fit: cover;
+    border-radius: 8px;
 }
 
 .employees h2 {
@@ -477,6 +482,8 @@ section {
 .employees figcaption {
     text-align: center;
     margin-top: .5rem;
+    font-size: 1rem;
+    font-weight: bold;
 }
 
 input,
@@ -541,6 +548,11 @@ input[type="checkbox"] {
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     margin-bottom: 60px;
+}
+
+.trip-grid h2 {
+    grid-column: 1 / -1;
+    margin-bottom: 10px;
 }
 
 .trip-card {
